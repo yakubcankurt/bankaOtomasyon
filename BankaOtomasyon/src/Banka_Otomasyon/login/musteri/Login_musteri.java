@@ -254,9 +254,9 @@ public class Login_musteri extends javax.swing.JFrame {
 
     private void jTextField_BORCODEKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_BORCODEKeyReleased
         try {
-            double x = Double.parseDouble(jTextField_PARAYATIR.getText());
+            double x = Double.parseDouble(jTextField_BORCODE.getText());
         } catch (NumberFormatException nfe) {
-            jTextField_PARAYATIR.setText("");
+            jTextField_BORCODE.setText("");
         }
     }//GEN-LAST:event_jTextField_BORCODEKeyReleased
 
@@ -268,9 +268,9 @@ public class Login_musteri extends javax.swing.JFrame {
 
     private void jTextField_PARACEKKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_PARACEKKeyReleased
         try {
-            double x = Double.parseDouble(jTextField_PARAYATIR.getText());
+            double x = Double.parseDouble(jTextField_PARACEK.getText());
         } catch (NumberFormatException nfe) {
-            jTextField_PARAYATIR.setText("");
+            jTextField_PARACEK.setText("");
         }
     }//GEN-LAST:event_jTextField_PARACEKKeyReleased
 

@@ -285,7 +285,7 @@ public class Login_personel extends javax.swing.JFrame {
         } else{
             JOptionPane.showMessageDialog(null,"Onaylama başarısız");
         }
-        
+        jTextField_RAPOR_NO_KREDI.setText("");
     }//GEN-LAST:event_jButton_KREDI_ONAYActionPerformed
 
     private void jTable_KREDIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_KREDIMouseClicked
@@ -318,6 +318,7 @@ public class Login_personel extends javax.swing.JFrame {
         } else{
             JOptionPane.showMessageDialog(null,"Onaylama başarısız");
         }
+       jTextField_RAPOR_NO_LIMIT.setText("");
     }//GEN-LAST:event_jButton_LIMIT_ONAYActionPerformed
 
     private void jButton_KREDI_RETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KREDI_RETActionPerformed
@@ -330,6 +331,7 @@ public class Login_personel extends javax.swing.JFrame {
         } else{
             JOptionPane.showMessageDialog(null,"Reddetme başarısız");
         }
+        jTextField_RAPOR_NO_KREDI.setText("");
     }//GEN-LAST:event_jButton_KREDI_RETActionPerformed
 
     private void jButton_LIMIT_RETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LIMIT_RETActionPerformed
@@ -342,6 +344,7 @@ public class Login_personel extends javax.swing.JFrame {
         } else{
             JOptionPane.showMessageDialog(null,"Reddetme başarısız");
         }
+        jTextField_RAPOR_NO_LIMIT.setText("");
     }//GEN-LAST:event_jButton_LIMIT_RETActionPerformed
 
     /**

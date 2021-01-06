@@ -36,7 +36,7 @@ public final class Login_yonetici extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable_Personel = new javax.swing.JTable();
+        jTable_PERSONEL = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -63,7 +63,7 @@ public final class Login_yonetici extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable_Personel.setModel(new javax.swing.table.DefaultTableModel(
+        jTable_PERSONEL.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -71,7 +71,12 @@ public final class Login_yonetici extends javax.swing.JFrame {
                 "AD", "SOYAD", "TC", "SIFRE", "MAAS"
             }
         ));
-        jScrollPane1.setViewportView(jTable_Personel);
+        jTable_PERSONEL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable_PERSONELMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTable_PERSONEL);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setName(""); // NOI18N
@@ -306,6 +311,12 @@ public final class Login_yonetici extends javax.swing.JFrame {
         show_personel();
     }//GEN-LAST:event_jButton_DELActionPerformed
 
+    private void jTable_PERSONELMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_PERSONELMouseClicked
+        DefaultTableModel model = (DefaultTableModel)jTable_PERSONEL.getModel();
+       int selectedIndex = jTable_PERSONEL.getSelectedRow();
+       jTextField_TC.setText(model.getValueAt(selectedIndex, 2).toString());
+    }//GEN-LAST:event_jTable_PERSONELMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -344,7 +355,7 @@ public final class Login_yonetici extends javax.swing.JFrame {
 
     public void show_personel(){
         ArrayList<Personel> list = Yonetici.personelList();
-        DefaultTableModel model = (DefaultTableModel)jTable_Personel.getModel();
+        DefaultTableModel model = (DefaultTableModel)jTable_PERSONEL.getModel();
         Object[] row = new Object[5];
         for(int i =0;i<list.size();i++){
             row[0] = list.get(i).getAd();
@@ -357,7 +368,7 @@ public final class Login_yonetici extends javax.swing.JFrame {
     }
     
     public void clear_personel(){
-        DefaultTableModel model = (DefaultTableModel)jTable_Personel.getModel();
+        DefaultTableModel model = (DefaultTableModel)jTable_PERSONEL.getModel();
         model.setRowCount(0);
     }
     
@@ -380,7 +391,7 @@ public final class Login_yonetici extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable_Personel;
+    private javax.swing.JTable jTable_PERSONEL;
     private javax.swing.JTextField jTextField_AD;
     private javax.swing.JTextField jTextField_MAAS;
     private javax.swing.JTextField jTextField_MAAS1;
