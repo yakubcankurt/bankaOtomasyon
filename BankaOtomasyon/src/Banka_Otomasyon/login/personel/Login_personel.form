@@ -196,11 +196,11 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="5" rowCount="0">
-                    <Column editable="true" title="Rapor No" type="java.lang.Integer"/>
-                    <Column editable="true" title="Ba&#x15f;vuran ID" type="java.lang.String"/>
-                    <Column editable="true" title="Kredi Tutar&#x131;" type="java.lang.Integer"/>
-                    <Column editable="true" title="Maa&#x15f;" type="java.lang.Integer"/>
-                    <Column editable="true" title="Durum" type="java.lang.String"/>
+                    <Column editable="false" title="Rapor No" type="java.lang.Integer"/>
+                    <Column editable="false" title="Ba&#x15f;vuran ID" type="java.lang.String"/>
+                    <Column editable="false" title="Kredi Tutar&#x131;" type="java.lang.Integer"/>
+                    <Column editable="false" title="Maa&#x15f;" type="java.lang.Integer"/>
+                    <Column editable="false" title="Durum" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -253,12 +253,12 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="6" rowCount="0">
-                    <Column editable="true" title="Rapor No" type="java.lang.Integer"/>
-                    <Column editable="true" title="Ba&#x15f;vuran ID" type="java.lang.Integer"/>
-                    <Column editable="true" title="Mevcut Limit" type="java.lang.Double"/>
-                    <Column editable="true" title="Talep Limit" type="java.lang.Double"/>
-                    <Column editable="true" title="Maa&#x15f;" type="java.lang.Integer"/>
-                    <Column editable="true" title="Durum" type="java.lang.String"/>
+                    <Column editable="false" title="Rapor No" type="java.lang.Integer"/>
+                    <Column editable="false" title="Ba&#x15f;vuran ID" type="java.lang.Integer"/>
+                    <Column editable="false" title="Mevcut Limit" type="java.lang.Double"/>
+                    <Column editable="false" title="Talep Limit" type="java.lang.Double"/>
+                    <Column editable="false" title="Maa&#x15f;" type="java.lang.Integer"/>
+                    <Column editable="false" title="Durum" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

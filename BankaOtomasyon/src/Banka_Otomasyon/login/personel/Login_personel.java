@@ -87,9 +87,16 @@ public class Login_personel extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         jTable_KREDI.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -110,9 +117,16 @@ public class Login_personel extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.Integer.class, java.lang.Double.class, java.lang.Double.class, java.lang.Integer.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         jTable_LIMIT.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -304,7 +318,7 @@ public class Login_personel extends javax.swing.JFrame {
        id_limit = (int) model.getValueAt(selectedIndex, 1);
        talep_limit =  (double) model.getValueAt(selectedIndex, 3);
        durum_limit = model.getValueAt(selectedIndex, 5).toString();
-       System.out.println(durum_limit + " " + talep_limit + " " + id_limit);
+       
     }//GEN-LAST:event_jTable_LIMITMouseClicked
 
     private void jButton_LIMIT_ONAYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LIMIT_ONAYActionPerformed

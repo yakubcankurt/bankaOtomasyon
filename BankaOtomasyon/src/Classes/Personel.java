@@ -49,8 +49,8 @@ public class Personel extends Calisan {
             Baglanti.st = Baglanti.conn.createStatement();
             Baglanti.st.executeUpdate(sorgu);
             Baglanti.st.executeUpdate(sorgu1);
-            System.out.println(GetMusteriID("44788547859") + "  " + limit);
-                Baglanti.st.executeUpdate("UPDATE YAKUB.HESAPLAR SET  KART_LIMIT = " + limit +" WHERE HESAP_ID = " + GetMusteriID(musteri.getTc()));
+            
+            Baglanti.st.executeUpdate("UPDATE YAKUB.HESAPLAR SET  KART_LIMIT = " + limit +" WHERE HESAP_ID = " + GetMusteriID(musteri.getTc()));
             
             JOptionPane.showMessageDialog(null,"kayıt başarılı");
             Baglanti.conn.close();
@@ -74,7 +74,7 @@ public class Personel extends Calisan {
                 Baglanti.res =Baglanti.st.executeQuery(sorgu);
                 while(Baglanti.res.next()){
                         id =Baglanti.res.getInt("ID");
-                        System.out.println(id);
+                        
                    }
                      
                 
